@@ -3,9 +3,13 @@
   "module": "src/compile.ts",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/css": "^0.0.37"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "css": "^3.0.0"
   }
 }
