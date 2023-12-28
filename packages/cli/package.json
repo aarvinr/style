@@ -1,0 +1,11 @@
+{
+  "name": "@stylecss/cli",
+  "module": "src/cli.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
