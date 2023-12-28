@@ -1,0 +1,8 @@
+{
+  "name": "style",
+  "description": "A simple & practical CSS preprocessor, built on Bun.",
+  "type": "module",
+  "workspaces": [
+    "packages/*"
+  ]
+}
