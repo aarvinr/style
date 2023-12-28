@@ -2,6 +2,9 @@
   "name": "@stylecss/bun",
   "module": "src/plugin.ts",
   "type": "module",
+  "dependencies": {
+    "@stylecss/compiler": "workspace:*"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
