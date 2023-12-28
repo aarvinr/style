@@ -10,13 +10,13 @@ export async function cli(src: string, out: string) {
     );
   }
 
-  if (src === "" || out === "") {
+  if (!src || !out) {
     throw new Error(
-      "Make sure you include a src path and out path! For more information, use bunx @stylecss/cli --help."
+      "Make sure you include a source path and output path! For more information, use bunx @stylecss/cli --help."
     );
   }
 
   return Bun.write(out, compile(await Bun.file(src).text()));
 }
 
-src || out ? cli(src, out) : null;
+cli(src, out);

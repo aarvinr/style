@@ -1,10 +1,16 @@
 import { expect, test } from "bun:test";
-import { cli } from "../../src/cli";
+import { exec } from "child_process";
 
 test("CLI: Run", async () => {
-  await cli(`${import.meta.dir}/run.style`, `${import.meta.dir}/run.css`);
+  await exec(
+    `bun run ./src/cli.ts ${import.meta.dir}/run.style ${
+      import.meta.dir
+    }/run.css`
+  );
 
-  const css = await Bun.file(`${import.meta.dir}/run.css`).text();
+  expect(await Bun.file(`${import.meta.dir}/run.css`).text()).toBe(
+    `:root {\n  aspect-ratio: 1 / 1;\n}`
+  );
+
   await Bun.write(`${import.meta.dir}/run.css`, "");
-  expect(css).toBe(`:root {\n  aspect-ratio: 1 / 1;\n}`);
 });
