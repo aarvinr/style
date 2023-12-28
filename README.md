@@ -27,7 +27,10 @@ A simple &amp; practical CSS preprocessor, Style freshens CSS with new, more str
 }
 
 :root > div {
-  margin: 4rem 6rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   color: transparent;
   background-image: linear-gradient(to right, blue, red);
   background-clip: text;
