@@ -23,6 +23,7 @@ A simple &amp; practical CSS preprocessor, Style freshens CSS with new, more str
   color: black;
   font-size: 2px;
   font-weight: 600;
+  font-family: "Inter", system-ui, sans-serif;
 }
 
 :root > div {
