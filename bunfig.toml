@@ -1,0 +1,2 @@
+[test]
+preload=["./packages/bun/tests/plugin.ts"]
