@@ -1,6 +1,6 @@
 # style
 
-A simple &amp; practical CSS preprocessor, Style freshens CSS with new, more structured & concise syntax that lets you build better apps. Then, once your app is ready, Style instantly compiles it to optimized & minified CSS that can be run anywhere.
+A simple &amp; practical CSS preprocessor, Style freshens CSS with new, more structured & concise syntax that lets you build better apps. Then, once your app is ready, Style instantly compiles it to optimized & minified CSS that can be used anywhere.
 
 ```css
 :root {
