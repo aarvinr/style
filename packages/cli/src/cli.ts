@@ -4,9 +4,9 @@ const src = Bun.argv[2];
 const out = Bun.argv[3];
 
 export async function cli(src: string, out: string) {
-  if (src === "--help" || src === "-h") {
+  if (src === "--help") {
     return console.log(
-      `\nWelcome to the Style CLI! To use it, simply pass a path with your source .style file, and a path for your output CSS:\nbunx @stylecss/cli source.style output.css`
+      `Commands:\n  <src> <out>    Compiles <src> style to <out> CSS\n\nOptions:\n  --help    Show help`
     );
   }
 
@@ -19,4 +19,4 @@ export async function cli(src: string, out: string) {
   return Bun.write(out, compile(await Bun.file(src).text()));
 }
 
-src && out ? cli(src, out) : null;
+src || out ? cli(src, out) : null;
