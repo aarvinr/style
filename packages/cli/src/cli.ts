@@ -19,4 +19,6 @@ export async function cli(src: string, out: string) {
   return Bun.write(out, compile(await Bun.file(src).text()));
 }
 
-cli(src, out);
+Bun.argv[1] !== "/workspaces/style/packages/cli/tests/cli.test.ts"
+  ? cli(src, out)
+  : null;
