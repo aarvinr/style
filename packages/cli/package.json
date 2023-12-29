@@ -3,6 +3,9 @@
   "module": "src/cli.ts",
   "version": "1.0.0",
   "type": "module",
+  "dependencies": {
+    "@stylecss/compiler": "workspace:*"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
