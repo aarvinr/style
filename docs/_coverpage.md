@@ -10,3 +10,5 @@
 
 [GitHub](https://github.com/aarvinr/style/)
 [Get Started](getting-started/overview.md)
+
+![color](#f8f8f8)

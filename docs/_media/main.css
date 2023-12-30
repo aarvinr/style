@@ -23,7 +23,3 @@ button.docsify-tabs__tab {
 button.docsify-tabs__tab:not(.docsify-tabs__tab--active) {
   cursor: pointer;
 }
-
-section.cover.show {
-  background: linear-gradient(to top right, #a0dbf2, #88c9f2) !important;
-}
