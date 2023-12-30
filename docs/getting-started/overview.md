@@ -4,7 +4,7 @@
 
 Style is a simple & practical CSS preprocessor. You write your styles in our custom syntax, and then our compiler magically transforms it into highly optimized CSS that can run anywhere. You can use Style with all your favorite frameworks, or use the Bun plugin or CLI everywhere else.
 
-> Want to leap right in? Check out the [Quickstart](quickstart.md).
+> Want to leap right in? Check out the [Quickstart](getting-started/quickstart.md).
 
 ## Syntax
 
