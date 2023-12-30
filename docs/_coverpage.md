@@ -1,4 +1,4 @@
-![Logo](_media/favicon.png)
+<img alt="Logo" src="_media/favicon.png" height="94px" />
 
 # style <small>css</small>
 
