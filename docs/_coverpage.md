@@ -1,3 +1,5 @@
+![Logo](static/favicon.png)
+
 # style <small>css</small>
 
 > A simple &amp; practical CSS preprocessor.
