@@ -2,6 +2,8 @@
 
 Style is a simple & practical CSS preprocessor. You write your styles in our custom syntax, and then our compiler magically transforms it into highly optimized CSS that can run anywhere. You can use Style with all your favorite frameworks, or use the Bun plugin or CLI everywhere else.
 
+> Want to leap right in? Check out the [Quickstart](quickstart.md).
+
 ## Syntax
 
 Style is useful because it's what CSS should have been. By eliminating unnecessary syntax and providing new properties, Style gives you the ability to have far more concise code while keeping it readable and efficient. Just take a look at this comparison between regular Style and CSS:
