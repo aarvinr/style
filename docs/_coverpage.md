@@ -7,4 +7,4 @@
 - Blazingly fast compiler
 
 [GitHub](https://github.com/aarvinr/style/)
-[Get Started](#overview)
+[Get Started](overview.md)
