@@ -1,6 +1,6 @@
 # Nesting
 
-Nesting lets you mimic the structure of your content in your styles. In the below example, the `div` selector only applies to `div`s within `:root`. This is similar to the behavior of the CSS `>` selector.
+Nesting lets you easily filter styles by their parents. In the below example, the `div` selector only applies to `div`s within `:root`. This is similar to the behavior of the CSS `>` selector, but it's far more concise and lets you properly structure your CSS to mimic the structure of your content.
 
 <!-- tabs:start -->
 
