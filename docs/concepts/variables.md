@@ -1,6 +1,6 @@
 # Variables
 
-Variables let you reuse values across your styles, helpful when you have a preset that will be repeatedly used. To use variables, simply use the `$` prefix for a property in an element.
+Variables lets you reuse values across your styles, helpful when you have a preset that will be repeatedly used. To use variables, simply use the `$` prefix for a property in an element.
 
 <!-- tabs:start -->
 

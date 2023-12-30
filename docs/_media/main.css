@@ -7,6 +7,10 @@
   --docsifytabs-content-padding: 0;
 }
 
+section.cover.show {
+  background-color: #f8f8f8;
+}
+
 input[type="search"] {
   font-family: "Source Sans Pro", system-ui, sans-serif;
 }

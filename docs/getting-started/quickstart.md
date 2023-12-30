@@ -1,6 +1,10 @@
 # Quickstart
 
+This quickstart will get the Style compiler running in your project as fast as possible.
+
 ## Installation
+
+Style is available for a large number of popular frameworks, as well as a Bun plugin or the CLI for everything else. 
 
 ### CLI
 
@@ -30,7 +34,7 @@ bun add -D @stylecss/bun
 import { plugin } from "bun";
 import { style } from "@stylecss/bun";
 
-plugin(style);
+plugin(style());
 ```
 
 **bunfig.toml**
