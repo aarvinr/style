@@ -1,4 +1,4 @@
-![Logo](static/favicon.png)
+![Logo](_media/favicon.png)
 
 # style <small>css</small>
 
