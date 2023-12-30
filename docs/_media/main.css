@@ -25,5 +25,5 @@ button.docsify-tabs__tab:not(.docsify-tabs__tab--active) {
 }
 
 section.cover.show {
-  background: linear-gradient(to top right, #c5eaff, #6f8df2) !important;
+  background: linear-gradient(to top right, #a0dbf2, #88c9f2) !important;
 }
