@@ -1,6 +1,7 @@
 {
   "name": "@stylecss/bun",
   "module": "src/plugin.ts",
+  "version": "v1.0.0",
   "type": "module",
   "dependencies": {
     "@stylecss/compiler": "workspace:*"
