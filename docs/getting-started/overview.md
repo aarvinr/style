@@ -1,3 +1,5 @@
+# Overview
+
 !> **Style is still under development, and isn't usable for production yet.**
 
 Style is a simple & practical CSS preprocessor. You write your styles in our custom syntax, and then our compiler magically transforms it into highly optimized CSS that can run anywhere. You can use Style with all your favorite frameworks, or use the Bun plugin or CLI everywhere else.
@@ -8,9 +10,11 @@ Style is a simple & practical CSS preprocessor. You write your styles in our cus
 
 Style is useful because it's what CSS should have been. By eliminating unnecessary syntax and providing new properties, Style gives you the ability to have far more concise code while keeping it readable and efficient. Just take a look at this comparison between regular Style and CSS:
 
-```css
-/* Style */
+<!-- tabs:start -->
 
+### **Style**
+
+```css
 :root {
   size: 20rem 100vh;
   text: black 2px bold;
@@ -22,9 +26,11 @@ Style is useful because it's what CSS should have been. By eliminating unnecessa
     border: black 16px solid;
   }
 }
+```
 
-/* CSS */
+### **CSS**
 
+```css
 :root {
   width: 20rem;
   height: 100vh;
@@ -49,11 +55,13 @@ Style is useful because it's what CSS should have been. By eliminating unnecessa
 }
 ```
 
+<!-- tabs:end -->
+
 ## Performance
 
-Style is powered by a compiler, allowing for maximum speed. The compiler itself uses [`rework/css`](https://github.com/rework/css) to create an abstract syntax tree from your Style code, make transformations, and then turn back into code for use.
+Style is powered by a compiler, allowing for maximum speed. The compiler itself uses [`reworkcss/css`](https://github.com/reworkcss/css) to create an abstract syntax tree from your Style code, make transformations, and then turn the object back into code for use.
 
-We recommend using Style with [Bun](https://bun.sh/), a blazingly fast JavaScript runtime that's heavily optimized and provides a great DX, including TypeScript support out of the box. That being said, you can still use Style with Node.jsa and get great performance.
+We recommend using Style with [Bun](https://bun.sh/), a blazingly fast JavaScript runtime that's heavily optimized and provides a great DX, including TypeScript support out of the box. That being said, you can still use Style with Node.js and get great performance with full support.
 
 ### Benchmarks
 

@@ -1,4 +1,8 @@
-## CLI
+# Quickstart
+
+## Installation
+
+### CLI
 
 If Style isn't available for your specific framework, or you're choosing not to use one (or Bun), you can use the Style CLI. Simply run the script from the package [`@stylecss/cli`](https://npmjs.com/@stylecss/cli), including the `<source>` path (file containing Style syntax) and an `<output>` path, where the compiled CSS will be written to.
 
@@ -12,7 +16,7 @@ If you ever forget the command, just use the standard `--help` flag.
 bunx @stylecss/cli --help
 ```
 
-## Bun
+### Bun
 
 If you're using the [Bun runtime](https://bun.sh/), you can make use of the Bun plugin. When using the plugin, anytime you use an `import` statement for a `.style` file, the file have a a default export containing a string with the compiled CSS. To use the plugin, install it and register it as a plugin for your project:
 
@@ -43,18 +47,22 @@ import styles from "./main.style";
 console.log(styles); // returns string with compiled CSS
 ```
 
-## Next
+### Next
 
 Coming soon!
 
-## Nuxt
+### Nuxt
 
 Coming soon!
 
-## SvelteKit
+### SvelteKit
 
 Coming soon!
 
-## Astro
+### Astro
 
 Coming soon!
+
+## Next Steps
+
+You're now ready to use Style in your website! Next, check out some of [core concepts](concepts/overview.md), and then feel free to check the [syntax documentation](syntax/overview.md) whenever you need to check for what property to use.

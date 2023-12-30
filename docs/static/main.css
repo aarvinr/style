@@ -1,0 +1,29 @@
+:root {
+  --docsifytabs-border-px: 0;
+  --docsifytabs-border-radius-px: 0;
+  --docsifytabs-tab-background: #ffffff;
+  --docsifytabs-tab-highlight-px: 0;
+  --docsifytabs-content-background: #f8f8f8;
+  --docsifytabs-content-padding: 0;
+}
+
+input[type="search"] {
+  font-family: "Source Sans Pro", system-ui, sans-serif;
+}
+
+input[type="search"]:focus {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+button.docsify-tabs__tab {
+  font-family: "Source Sans Pro", system-ui, sans-serif;
+}
+
+button.docsify-tabs__tab:not(.docsify-tabs__tab--active) {
+  cursor: pointer;
+}
+
+section.cover.show {
+  background: linear-gradient(to top right, #c5eaff, #6f8df2) !important;
+}
