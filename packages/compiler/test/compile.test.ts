@@ -1,12 +1,14 @@
 import { expect, test, describe } from "bun:test";
 
 import { compile } from "../src/compile";
-import { ratio } from "../src/parse/ratio";
+
+import { box } from "../src/parse/box";
 import { _break } from "../src/parse/break";
+import { isolate } from "../src/parse/isolate";
+import { ratio } from "../src/parse/ratio";
 
 import { parse, stringify } from "css";
 import { readFileSync } from "fs";
-import { box } from "../src/parse/box";
 
 describe("Compiler", () => {
   test("Compile", () => {
@@ -44,6 +46,16 @@ describe("Compiler", () => {
     );
     expect(stringify(box(parse(response)))).toBe(
       ":root {\n  box-sizing: border-box;\n  box-decoration-break: clone;\n  box-decoration-break: slice;\n}"
+    );
+  });
+
+  test("Isolate", () => {
+    const response = readFileSync(
+      import.meta.dir + "/style/isolate.style",
+      "utf-8"
+    );
+    expect(stringify(isolate(parse(response)))).toBe(
+      ":root {\n  isolation: isolate;\n}"
     );
   });
 });
