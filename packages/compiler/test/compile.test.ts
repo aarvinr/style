@@ -6,6 +6,7 @@ import { _break } from "../src/parse/break";
 
 import { parse, stringify } from "css";
 import { readFileSync } from "fs";
+import { box } from "../src/parse/box";
 
 describe("Compiler", () => {
   test("Compile", () => {
@@ -33,6 +34,16 @@ describe("Compiler", () => {
     );
     expect(stringify(_break(parse(response)))).toBe(
       ":root {\n  break-before: avoid;\n  break-after: right;\n  break-inside: revert;\n}"
+    );
+  });
+
+  test("Box", () => {
+    const response = readFileSync(
+      import.meta.dir + "/style/box.style",
+      "utf-8"
+    );
+    expect(stringify(box(parse(response)))).toBe(
+      ":root {\n  box-sizing: border-box;\n  box-decoration-break: clone;\n  box-decoration-break: slice;\n}"
     );
   });
 });

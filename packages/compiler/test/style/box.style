@@ -1,0 +1,4 @@
+:root {
+  box: border clone;
+  box: slice;
+}
