@@ -1,3 +1,3 @@
 # @stylecss/cli
 
-Style is a simple & practical CSS preprocessor. This package provides a CLI for Style.
+This package provides a CLI for Style, a simple & practical CSS preprocessor. For more information, see [the documentation](https://stylecss.js.org/).

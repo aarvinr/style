@@ -1,5 +1,10 @@
 {
   "name": "@stylecss/cli",
+  "description": "This package provides a CLI for Style, a simple & practical CSS preprocessor.",
+  "author": {
+    "name": "Aarvin R."
+  },
+  "homepage": "https://stylecss.js.org/",
   "module": "src/cli.ts",
   "version": "1.0.0",
   "type": "module",
@@ -11,5 +16,11 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aarvinr/style.git",
+    "directory": "packages/cli"
+  },
+  "license": "MIT"
 }

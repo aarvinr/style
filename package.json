@@ -1,8 +1,17 @@
 {
   "name": "style",
   "description": "A simple & practical CSS preprocessor, built on Bun.",
+  "author": {
+    "name": "Aarvin R."
+  },
+  "homepage": "https://stylecss.js.org/",
   "type": "module",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aarvinr/style.git"
+  },
+  "license": "MIT"
 }

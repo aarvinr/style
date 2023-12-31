@@ -1,5 +1,10 @@
 {
   "name": "@stylecss/compiler",
+  "description": "This package provides the global compiler for Style, a simple & practical CSS preprocessor.",
+  "author": {
+    "name": "Aarvin R."
+  },
+  "homepage": "https://stylecss.js.org/",
   "module": "src/compile.ts",
   "type": "module",
   "devDependencies": {
@@ -11,5 +16,11 @@
   },
   "dependencies": {
     "css": "^3.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aarvinr/style.git",
+    "directory": "packages/compiler"
+  },
+  "license": "MIT"
 }
