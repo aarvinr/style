@@ -8,7 +8,7 @@
 
 [View Documentation &rarr;](https://stylecss.js.org/)
 
-A simple &amp; practical CSS preprocessor, Style freshens CSS with new, more structured and concise syntax that lets you build better apps. Then, once your app is ready, Style instantly compiles it to optimized & minified CSS that can be used anywhere.
+A simple &amp; practical CSS preprocessor, Style freshens CSS with new, more structured and concise syntax that lets you build better apps. You write your styles in our custom syntax, and then our compiler magically transforms it into highly optimized CSS that can run anywhere.
 
 ```css
 :root {
