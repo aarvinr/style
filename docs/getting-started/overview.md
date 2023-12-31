@@ -2,7 +2,7 @@
 
 !> **Style is still under development, and isn't usable for production yet.**
 
-Style is a simple & practical CSS preprocessor. You write your styles in our custom syntax, and then our compiler magically transforms it into highly optimized CSS that can run anywhere. You can use Style with all your favorite frameworks, or use the Bun plugin or CLI everywhere else.
+A simple &amp; practical CSS preprocessor, Style freshens CSS with new, more structured and concise syntax that lets you build better apps. You write your styles in our custom syntax, and then our compiler magically transforms it into highly optimized CSS that can run anywhere.
 
 > Want to leap right in? Check out the [Quickstart](getting-started/quickstart.md).
 
