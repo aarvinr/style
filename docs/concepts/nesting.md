@@ -8,10 +8,10 @@ Nesting lets you easily filter styles by their parents. In the below example, th
 
 ```css
 :root {
-  size: 100vw 100vh;
+  margin-top: 20vh;
 
   div {
-    size: 100vw 20vh;
+    margin-left: 14vw;
   }
 }
 ```
@@ -20,11 +20,11 @@ Nesting lets you easily filter styles by their parents. In the below example, th
 
 ```css
 :root {
-  size: 100vw 100vh;
+  margin-top: 20vh;
 }
 
 :root > div {
-  size: 100vw 20vh;
+  margin-left: 14vw;
 }
 ```
 
