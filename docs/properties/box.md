@@ -19,7 +19,6 @@ The `box` property can be used as an alias for `box-sizing` and `box-decoration-
 :root {
   box-sizing: border-box;
   box-decoration-break: clone;
-
   box-decoration-break: slice;
 }
 ```
