@@ -31,7 +31,7 @@ section.cover.show {
 }
 
 input[type="search"] {
-  font-family: "Source Sans Pro", system-ui, sans-serif;
+  font-family: "Inter Variable", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 input[type="search"]:focus {
@@ -40,7 +40,7 @@ input[type="search"]:focus {
 }
 
 button.docsify-tabs__tab {
-  font-family: "Source Sans Pro", system-ui, sans-serif;
+  font-family: "Inter Variable", "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
 }
 
 button.docsify-tabs__tab:not(.docsify-tabs__tab--active) {
