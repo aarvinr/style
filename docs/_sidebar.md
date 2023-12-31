@@ -14,5 +14,6 @@
 - **Properties**
 
   - [Overview](properties/overview.md)
+  - [box](properties/box.md)
   - [break](properties/break.md)
   - [ratio](properties/ratio.md)
