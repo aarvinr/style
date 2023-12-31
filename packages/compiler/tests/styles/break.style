@@ -1,0 +1,3 @@
+:root {
+  break: avoid right revert;
+}
