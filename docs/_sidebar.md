@@ -16,4 +16,5 @@
   - [Overview](properties/overview.md)
   - [box](properties/box.md)
   - [break](properties/break.md)
+  - [isolate](properties/isolate.md)
   - [ratio](properties/ratio.md)
