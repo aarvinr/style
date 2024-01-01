@@ -3,6 +3,7 @@ import { expect, test, describe } from "bun:test";
 import { compile } from "../src/compile";
 
 import { accent } from "../src/parse/accent";
+import { animate } from "../src/parse/animate";
 import { box } from "../src/parse/box";
 import { _break } from "../src/parse/break";
 import { isolate } from "../src/parse/isolate";
@@ -27,6 +28,16 @@ describe("Compiler", () => {
     );
     expect(stringify(accent(parse(response)))).toBe(
       ":root {\n  accent-color: red;\n}"
+    );
+  });
+
+  test("Animate", () => {
+    const response = readFileSync(
+      import.meta.dir + "/style/animate.style",
+      "utf-8"
+    );
+    expect(stringify(animate(parse(response)))).toBe(
+      ":root {\n  animation: 3s linear 1s slidein;\n}"
     );
   });
 
