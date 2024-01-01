@@ -8,6 +8,7 @@ import { background_blend } from "../src/parse/background-blend";
 import { box } from "../src/parse/box";
 import { _break } from "../src/parse/break";
 import { caret } from "../src/parse/caret";
+import { color_adjust } from "../src/parse/color-adjust";
 import { isolate } from "../src/parse/isolate";
 import { ratio } from "../src/parse/ratio";
 
@@ -80,6 +81,16 @@ describe("Compiler", () => {
     );
     expect(stringify(caret(parse(response)))).toBe(
       ":root {\n  caret-color: red;\n}"
+    );
+  });
+
+  test("Color-Adjust", () => {
+    const response = readFileSync(
+      import.meta.dir + "/style/color-adjust.style",
+      "utf-8"
+    );
+    expect(stringify(color_adjust(parse(response)))).toBe(
+      ":root {\n  forced-color-adjust: auto;\n}"
     );
   });
 
