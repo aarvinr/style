@@ -7,6 +7,7 @@ import { box } from "./parse/box";
 import { _break } from "./parse/break";
 import { caret } from "./parse/caret";
 import { color_adjust } from "./parse/color-adjust";
+import { decorate } from "../src/parse/decorate";
 import { isolate } from "./parse/isolate";
 import { ratio } from "./parse/ratio";
 
@@ -20,6 +21,7 @@ export function compile(src: string): string {
   css = _break(css);
   css = caret(css);
   css = color_adjust(css);
+  css = decorate(css);
   css = isolate(css);
   css = ratio(css);
 

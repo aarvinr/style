@@ -9,6 +9,7 @@ import { box } from "../src/parse/box";
 import { _break } from "../src/parse/break";
 import { caret } from "../src/parse/caret";
 import { color_adjust } from "../src/parse/color-adjust";
+import { decorate } from "../src/parse/decorate";
 import { isolate } from "../src/parse/isolate";
 import { ratio } from "../src/parse/ratio";
 
@@ -91,6 +92,16 @@ describe("Compiler", () => {
     );
     expect(stringify(color_adjust(parse(response)))).toBe(
       ":root {\n  forced-color-adjust: auto;\n}"
+    );
+  });
+
+  test("Decorate", () => {
+    const response = readFileSync(
+      import.meta.dir + "/style/decorate.style",
+      "utf-8"
+    );
+    expect(stringify(decorate(parse(response)))).toBe(
+      ":root {\n  text-decoration: underline overline #FF3028;\n}"
     );
   });
 
