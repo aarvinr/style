@@ -1,0 +1,9 @@
+:root {
+  flex: column end;
+  flex: row center start;
+  flex: column-reverse unset 50%;
+  flex: row-reverse around baseline 20em;
+  flex: column evenly first-baseline 16px;
+  flex: column stretch 2 wrap;
+  flex: row initial inherit 20% nowrap;
+}

@@ -13,7 +13,7 @@ export function box(src: Stylesheet): Stylesheet {
       .forEach((declaration: Declaration) => {
         const [, sizing = "", decoration = ""] =
           declaration.value?.match(
-            /\s*(border|content|inherit|initial|revert|revert-layer|unset)?\s*(clone|slice|inherit|initial|revert|layer|unset)?\s*/
+            /\s*(border|content|inherit|initial|revert|revert-layer|unset)?\s*(clone|slice|inherit|initial|revert|revert-layer|unset)?\s*/
           ) || [];
 
         if (sizing) {

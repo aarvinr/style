@@ -10,6 +10,7 @@ import { _break } from "../src/parse/break";
 import { caret } from "../src/parse/caret";
 import { color_adjust } from "../src/parse/color-adjust";
 import { decorate } from "../src/parse/decorate";
+import { flex } from "../src/parse/flex";
 import { isolate } from "../src/parse/isolate";
 import { ratio } from "../src/parse/ratio";
 
@@ -102,6 +103,16 @@ describe("Compiler", () => {
     );
     expect(stringify(decorate(parse(response)))).toBe(
       ":root {\n  text-decoration: underline overline #FF3028;\n}"
+    );
+  });
+
+  test("Flex", () => {
+    const response = readFileSync(
+      import.meta.dir + "/style/flex.style",
+      "utf-8"
+    );
+    expect(stringify(flex(parse(response)))).toBe(
+      ":root {\n  display: flex;\n  flex-direction: column;\n  justify-content: end;\n  align-items: end;\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n  align-items: start;\n  display: flex;\n  flex-direction: column-reverse;\n  justify-content: unset;\n  align-items: unset;\n  flex-basis: 50%;\n  display: flex;\n  flex-direction: row-reverse;\n  justify-content: space-around;\n  align-items: baseline;\n  flex-basis: 20em;\n  display: flex;\n  flex-direction: column;\n  justify-content: space-evenly;\n  align-items: first baseline;\n  flex-basis: 16px;\n  display: flex;\n  flex-direction: column;\n  justify-content: stretch;\n  align-items: stretch;\n  flex-basis: 2;\n  flex-wrap: wrap;\n  display: flex;\n  flex-direction: row;\n  justify-content: initial;\n  align-items: inherit;\n  flex-basis: 20%;\n  flex-wrap: nowrap;\n}"
     );
   });
 
