@@ -38,20 +38,15 @@ Style is useful because it's what CSS should have been. By eliminating unnecessa
   font-size: 2px;
   font-weight: 600;
   font-family: "Inter", system-ui, sans-serif;
-}
 
-:root > div {
-  margin-left: 4rem;
-  margin-right: 4rem;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
-  color: transparent;
-  background-image: linear-gradient(to right, blue, red);
-  background-clip: text;
-  font-size: 16px;
-  border-style: solid;
-  border-width: 16px;
-  border-color: black;
+  div {
+    margin: 4rem 6rem;
+    color: transparent;
+    background-image: linear-gradient(to right, blue, red);
+    background-clip: text;
+    font-size: 16px;
+    border: solid 16px black;
+  }
 }
 ```
 

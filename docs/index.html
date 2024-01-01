@@ -49,6 +49,11 @@
               return editHtml + html;
             });
           },
+          (hook, vm) => {
+            hook.doneEach((content) => {
+              document.title = `${document.title} / Style`;
+            });
+          },
         ],
       };
     </script>

@@ -1,19 +1,19 @@
 - **Getting Started**
 
-  - [Overview](getting-started/overview.md)
+  - [Overview](getting-started/overview.md "Getting Started")
   - [Quickstart](getting-started/quickstart.md)
   - [Configuration](getting-started/configuration.md)
 
 - **Concepts**
 
-  - [Overview](concepts/overview.md)
+  - [Overview](concepts/overview.md "Concepts")
   - [Variables](concepts/variables.md)
   - [Nesting](concepts/nesting.md)
   - [Extends](concepts/extends.md)
 
 - **Properties**
 
-  - [Overview](properties/overview.md)
+  - [Overview](properties/overview.md "Properties")
   - [accent](properties/accent.md)
   - [animate](properties/animate.md)
   - [background-blend](properties/background-blend.md)

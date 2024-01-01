@@ -1,6 +1,6 @@
 # Nesting
 
-Nesting lets you easily filter styles by their parents. In the below example, the `div` selector only applies to `div`s within `:root`. This is similar to the behavior of the CSS `>` selector, but it's far more concise and lets you properly structure your CSS to mimic the structure of your content.
+Style comes with full support for CSS nesting, which lets you easily filter styles by their parents. In the below example, the `div` selector only applies to `div`s within `:root`. This lets you properly structure your CSS to mimic the structure of your content, which can be useful for readability.
 
 <!-- tabs:start -->
 
@@ -21,10 +21,10 @@ Nesting lets you easily filter styles by their parents. In the below example, th
 ```css
 :root {
   margin-top: 20vh;
-}
 
-:root > div {
-  margin-left: 14vw;
+  div {
+    margin-left: 14vw;
+  }
 }
 ```
 

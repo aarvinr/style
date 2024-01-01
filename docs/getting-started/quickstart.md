@@ -4,7 +4,7 @@ This quickstart will get the Style compiler running in your project as fast as p
 
 ## Installation
 
-Style is available for a large number of popular frameworks, as well as a Bun plugin or the CLI for everything else. 
+Style is available for a large number of popular frameworks, as well as a Bun plugin or the CLI for everything else.
 
 ### CLI
 
@@ -69,4 +69,4 @@ Coming soon!
 
 ## Next Steps
 
-You're now ready to use Style in your website! Next, check out some of [core concepts](concepts/overview.md), and then feel free to check the [syntax documentation](syntax/overview.md) whenever you need to check for what property to use.
+You're now ready to use Style in your website! Next, check out some of [core concepts](concepts/overview.md), and then feel free to check the [properties documentation](properties/overview.md) whenever you need to check what property is best to use.
