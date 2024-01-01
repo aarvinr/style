@@ -21,5 +21,6 @@
   - [break](properties/break.md)
   - [caret](properties/caret.md)
   - [color-adjust](properties/color-adjust.md)
+  - [decorate](properties/decorate.md)
   - [isolate](properties/isolate.md)
   - [ratio](properties/ratio.md)
