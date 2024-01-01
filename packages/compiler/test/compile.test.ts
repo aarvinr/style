@@ -19,13 +19,23 @@ describe("Compiler", () => {
     expect(compile(response)).toBe(":root {\n  aspect-ratio: 1 / 1;\n}");
   });
 
-  test("Ratio", () => {
+  test("Accent", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/ratio.style",
+      import.meta.dir + "/style/accent.style",
       "utf-8"
     );
-    expect(stringify(ratio(parse(response)))).toBe(
-      ":root {\n  aspect-ratio: 1 / 1;\n}"
+    expect(stringify(box(parse(response)))).toBe(
+      ":root {\n  accent-color: red;\n}"
+    );
+  });
+
+  test("Box", () => {
+    const response = readFileSync(
+      import.meta.dir + "/style/box.style",
+      "utf-8"
+    );
+    expect(stringify(box(parse(response)))).toBe(
+      ":root {\n  box-sizing: border-box;\n  box-decoration-break: clone;\n  box-decoration-break: slice;\n}"
     );
   });
 
@@ -39,13 +49,13 @@ describe("Compiler", () => {
     );
   });
 
-  test("Box", () => {
+  test("Ratio", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/box.style",
+      import.meta.dir + "/style/ratio.style",
       "utf-8"
     );
-    expect(stringify(box(parse(response)))).toBe(
-      ":root {\n  box-sizing: border-box;\n  box-decoration-break: clone;\n  box-decoration-break: slice;\n}"
+    expect(stringify(ratio(parse(response)))).toBe(
+      ":root {\n  aspect-ratio: 1 / 1;\n}"
     );
   });
 
