@@ -2,6 +2,7 @@ import { expect, test, describe } from "bun:test";
 
 import { compile } from "../src/compile";
 
+import { accent } from "../src/parse/accent";
 import { box } from "../src/parse/box";
 import { _break } from "../src/parse/break";
 import { isolate } from "../src/parse/isolate";
@@ -24,7 +25,7 @@ describe("Compiler", () => {
       import.meta.dir + "/style/accent.style",
       "utf-8"
     );
-    expect(stringify(box(parse(response)))).toBe(
+    expect(stringify(accent(parse(response)))).toBe(
       ":root {\n  accent-color: red;\n}"
     );
   });
