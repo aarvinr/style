@@ -8,7 +8,7 @@ A simple &amp; practical CSS preprocessor, Style freshens CSS with new, more str
 
 ## Syntax
 
-Style is useful because it's what CSS should have been. By eliminating unnecessary syntax and providing new properties, Style gives you the ability to have far more concise code while keeping it readable and efficient. Just take a look at this comparison between regular Style and CSS:
+Style is useful because it's what CSS should have been. By eliminating unnecessary syntax and providing new properties, Style gives you the ability to have far more concise code while keeping it readable and efficient. Take a look at a comparison between Style and vanilla CSS:
 
 <!-- tabs:start -->
 
