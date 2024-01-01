@@ -7,6 +7,7 @@ import { animate } from "../src/parse/animate";
 import { background_blend } from "../src/parse/background-blend";
 import { box } from "../src/parse/box";
 import { _break } from "../src/parse/break";
+import { caret } from "../src/parse/caret";
 import { isolate } from "../src/parse/isolate";
 import { ratio } from "../src/parse/ratio";
 
@@ -72,13 +73,13 @@ describe("Compiler", () => {
     );
   });
 
-  test("Ratio", () => {
+  test("Caret", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/ratio.style",
+      import.meta.dir + "/style/caret.style",
       "utf-8"
     );
-    expect(stringify(ratio(parse(response)))).toBe(
-      ":root {\n  aspect-ratio: 1 / 1;\n}"
+    expect(stringify(caret(parse(response)))).toBe(
+      ":root {\n  caret-color: red;\n}"
     );
   });
 
@@ -89,6 +90,16 @@ describe("Compiler", () => {
     );
     expect(stringify(isolate(parse(response)))).toBe(
       ":root {\n  isolation: isolate;\n}"
+    );
+  });
+
+  test("Ratio", () => {
+    const response = readFileSync(
+      import.meta.dir + "/style/ratio.style",
+      "utf-8"
+    );
+    expect(stringify(ratio(parse(response)))).toBe(
+      ":root {\n  aspect-ratio: 1 / 1;\n}"
     );
   });
 });
