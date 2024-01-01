@@ -6,6 +6,7 @@
   },
   "homepage": "https://stylecss.js.org/",
   "module": "src/compile.ts",
+  "version": "0.1.0",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest",
