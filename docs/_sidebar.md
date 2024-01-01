@@ -14,7 +14,12 @@
 - **Properties**
 
   - [Overview](properties/overview.md)
+  - [accent](properties/accent.md)
+  - [animate](properties/animate.md)
+  - [background-blend](properties/background-blend.md)
   - [box](properties/box.md)
   - [break](properties/break.md)
+  - [caret](properties/caret.md)
+  - [color-adjust](properties/color-adjust.md)
   - [isolate](properties/isolate.md)
   - [ratio](properties/ratio.md)
