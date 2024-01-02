@@ -1,5 +1,5 @@
 import { expect, test, describe, afterEach } from "bun:test";
-import { cli } from "../src/cli";
+import { cli } from "../bin/cli";
 
 describe("CLI", () => {
   afterEach(async () => {
