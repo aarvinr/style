@@ -19,6 +19,6 @@ export async function cli(src: string, out: string) {
   return Bun.write(out, compile(await Bun.file(src).text()));
 }
 
-Bun.argv[1] !== `${new URL("..", import.meta.url).pathname}test/cli.test.ts`
+Bun.argv[1] !== `${new URL("..", import.meta.url).pathname}tests/cli.test.ts`
   ? cli(src, out)
   : null;

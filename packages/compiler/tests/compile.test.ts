@@ -20,7 +20,7 @@ import { readFileSync } from "fs";
 describe("Compiler", () => {
   test("Compile", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/ratio.style",
+      import.meta.dir + "/styles/ratio.style",
       "utf-8"
     );
     expect(compile(response)).toBe(":root {\n  aspect-ratio: 1 / 1;\n}");
@@ -28,7 +28,7 @@ describe("Compiler", () => {
 
   test("Accent", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/accent.style",
+      import.meta.dir + "/styles/accent.style",
       "utf-8"
     );
     expect(stringify(accent(parse(response)))).toBe(
@@ -38,7 +38,7 @@ describe("Compiler", () => {
 
   test("Animate", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/animate.style",
+      import.meta.dir + "/styles/animate.style",
       "utf-8"
     );
     expect(stringify(animate(parse(response)))).toBe(
@@ -48,7 +48,7 @@ describe("Compiler", () => {
 
   test("Background-Blend", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/background-blend.style",
+      import.meta.dir + "/styles/background-blend.style",
       "utf-8"
     );
     expect(stringify(background_blend(parse(response)))).toBe(
@@ -58,7 +58,7 @@ describe("Compiler", () => {
 
   test("Box", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/box.style",
+      import.meta.dir + "/styles/box.style",
       "utf-8"
     );
     expect(stringify(box(parse(response)))).toBe(
@@ -68,7 +68,7 @@ describe("Compiler", () => {
 
   test("Break", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/break.style",
+      import.meta.dir + "/styles/break.style",
       "utf-8"
     );
     expect(stringify(_break(parse(response)))).toBe(
@@ -78,7 +78,7 @@ describe("Compiler", () => {
 
   test("Caret", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/caret.style",
+      import.meta.dir + "/styles/caret.style",
       "utf-8"
     );
     expect(stringify(caret(parse(response)))).toBe(
@@ -88,7 +88,7 @@ describe("Compiler", () => {
 
   test("Color-Adjust", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/color-adjust.style",
+      import.meta.dir + "/styles/color-adjust.style",
       "utf-8"
     );
     expect(stringify(color_adjust(parse(response)))).toBe(
@@ -98,7 +98,7 @@ describe("Compiler", () => {
 
   test("Decorate", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/decorate.style",
+      import.meta.dir + "/styles/decorate.style",
       "utf-8"
     );
     expect(stringify(decorate(parse(response)))).toBe(
@@ -108,7 +108,7 @@ describe("Compiler", () => {
 
   test("Flex", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/flex.style",
+      import.meta.dir + "/styles/flex.style",
       "utf-8"
     );
     expect(stringify(flex(parse(response)))).toBe(
@@ -118,7 +118,7 @@ describe("Compiler", () => {
 
   test("Isolate", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/isolate.style",
+      import.meta.dir + "/styles/isolate.style",
       "utf-8"
     );
     expect(stringify(isolate(parse(response)))).toBe(
@@ -128,7 +128,7 @@ describe("Compiler", () => {
 
   test("Ratio", () => {
     const response = readFileSync(
-      import.meta.dir + "/style/ratio.style",
+      import.meta.dir + "/styles/ratio.style",
       "utf-8"
     );
     expect(stringify(ratio(parse(response)))).toBe(

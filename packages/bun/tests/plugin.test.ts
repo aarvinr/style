@@ -11,7 +11,7 @@ describe("Bun", () => {
   });
 
   test("Import", async () => {
-    const { default: response } = await import("./style/import.style");
+    const { default: response } = await import("./styles/import.style");
     expect(response).toBe(":root {\n  aspect-ratio: 1 / 1;\n}");
   });
 });
