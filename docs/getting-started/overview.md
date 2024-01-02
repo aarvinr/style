@@ -56,7 +56,7 @@ Style is useful because it's what CSS should have been. By eliminating unnecessa
 
 Style is powered by a compiler, allowing for maximum speed. The compiler itself uses [`reworkcss/css`](https://github.com/reworkcss/css) to create an abstract syntax tree from your Style code, make transformations, and then turn the object back into code for use.
 
-We recommend using Style with [Bun](https://bun.sh/), a blazingly fast JavaScript runtime that's heavily optimized and provides a great DX, including TypeScript support out of the box. That being said, you can still use Style with Node.js and get great performance with full support.
+You use Style with [Bun](https://bun.sh/), a blazingly fast JavaScript runtime that's heavily optimized and provides a great DX, including TypeScript support out of the box. That allows for maximum performance, so that Style can compile your code in a matter of milliseconds.
 
 ### Benchmarks
 
