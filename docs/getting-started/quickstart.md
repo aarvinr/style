@@ -17,7 +17,7 @@ bunx --bun style ./main.style ./main.css
 If you ever forget the command, just use the standard `--help` flag.
 
 ```bash
-bunx @stylecss/cli --help
+bunx --bun style --help
 ```
 
 ### Bun
