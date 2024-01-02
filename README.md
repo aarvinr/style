@@ -19,7 +19,7 @@ A simple &amp; practical CSS preprocessor, Style freshens CSS with new, more str
   div {
     margin: 4rem 6rem;
     text: linear-gradient(to right, blue, red) 16px;
-    border: black 16px solid;
+    border: solid 16px black;
   }
 }
 
