@@ -6,7 +6,7 @@
   },
   "homepage": "https://stylecss.js.org/",
   "module": "src/cli.ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "prepublishOnly": "bun run ../../prePublish.ts",
     "postpublish": "bun run ../../postPublish.ts",
@@ -14,7 +14,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@stylecss/compiler": "latest"
+    "@stylecss/compiler": "workspace:*"
   },
   "devDependencies": {
     "@types/bun": "^1.0.0"
