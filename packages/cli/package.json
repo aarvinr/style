@@ -14,7 +14,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@stylecss/compiler": "workspace:*"
+    "@stylecss/compiler": "latest"
   },
   "devDependencies": {
     "@types/bun": "^1.0.0"
@@ -24,7 +24,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aarvinr/style.git",
+    "url": "git+https://github.com/aarvinr/style.git",
     "directory": "packages/cli"
   },
   "license": "MIT"
