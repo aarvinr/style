@@ -8,10 +8,10 @@ Style is available for a large number of popular frameworks, as well as a Bun pl
 
 ### CLI
 
-If Style isn't available for your specific framework, or you're choosing not to use one (or Bun), you can use the Style CLI. Simply run the script from the package [`@stylecss/cli`](https://npmjs.com/@stylecss/cli), including the `<source>` path (file containing Style syntax) and an `<output>` path, where the compiled CSS will be written to.
+If Style isn't available for your specific framework, or you're choosing not to use one (or Bun), you can use the Style CLI. Simply run the script from the package [`style`](https://npmjs.com/@stylecss/cli), including the `<source>` path (file containing Style syntax) and an `<output>` path, where the compiled CSS will be written to.
 
 ```bash
-bunx @stylecss/cli ./main.style ./main.css
+bunx --bun style ./main.style ./main.css
 ```
 
 If you ever forget the command, just use the standard `--help` flag.
