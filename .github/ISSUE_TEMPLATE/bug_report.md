@@ -7,8 +7,9 @@ assignees: ''
 
 ---
 
-**Which package are you using?**
+**Which package(s) are you using?**
 - [ ] `@stylecss/bun`
+- [ ] `@stylecss/cli`
 - [ ] `@stylecss/compiler`
 
 **What is the bug?**
