@@ -13,6 +13,9 @@
     "publish": "npm publish --access=public"
   },
   "type": "module",
+  "bin": {
+    "style": "./bin/cli.ts"
+  },
   "dependencies": {
     "@stylecss/compiler": "workspace:*"
   },

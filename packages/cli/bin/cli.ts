@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { compile } from "@stylecss/compiler";
 
 const src = Bun.argv[2];
