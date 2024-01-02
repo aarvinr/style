@@ -1,6 +1,6 @@
 {
   "name": "@stylecss/bun",
-  "description": "The Bun plugin for Style, a simple & practical CSS preprocessor.",
+  "description": "This package provides the Bun plugin for Style, a simple & practical CSS preprocessor.",
   "author": {
     "name": "Aarvin R."
   },

@@ -1,6 +1,6 @@
 {
   "name": "@stylecss/cli",
-  "description": "This package provides a CLI for Style, a simple & practical CSS preprocessor.",
+  "description": "This package provides the CLI for Style, a simple & practical CSS preprocessor.",
   "author": {
     "name": "Aarvin R."
   },
