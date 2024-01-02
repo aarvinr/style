@@ -6,7 +6,7 @@
   },
   "homepage": "https://stylecss.js.org/",
   "module": "src/plugin.ts",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "prepublishOnly": "bun run ../../prePublish.ts",
     "postpublish": "bun run ../../postPublish.ts",
