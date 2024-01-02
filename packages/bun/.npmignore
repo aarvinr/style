@@ -1,4 +1,4 @@
-tests/
+test/
 
 .gitignore
 bunfig.toml

@@ -9,7 +9,8 @@
   "version": "1.0.1",
   "scripts": {
     "prepublishOnly": "bun run ../../prePublish.ts",
-    "publish": "npm publish --access=public && bun run ../../postPublish.ts"
+    "postpublish": "bun run ../../postPublish.ts",
+    "publish": "npm publish --access=public"
   },
   "type": "module",
   "dependencies": {
