@@ -18,7 +18,7 @@ Style is useful because it's what CSS should have been. By eliminating unnecessa
 :root {
   size: 20rem 100vh;
   text: black 2px bold;
-  font: "Inter", system, sans;
+  font: "Inter", system-ui, sans-serif;
 
   div {
     margin: 4rem 6rem;

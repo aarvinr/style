@@ -23,5 +23,6 @@
   - [color-adjust](properties/color-adjust.md)
   - [decorate](properties/decorate.md)
   - [flex](properties/flex.md)
+  - [font](properties/font.md)
   - [isolate](properties/isolate.md)
   - [ratio](properties/ratio.md)

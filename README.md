@@ -14,7 +14,7 @@ A simple &amp; practical CSS preprocessor, Style freshens CSS with new, more str
 :root {
   size: 20rem 100vh;
   text: black 2px bold;
-  font: "Inter", system, sans;
+  font: "Inter", system-ui, sans-serif;
 
   div {
     margin: 4rem 6rem;
