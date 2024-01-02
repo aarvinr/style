@@ -79,7 +79,7 @@ export function flex(src: Stylesheet): Stylesheet {
           rule.declarations?.push({
             type: "declaration",
             property: "flex-wrap",
-            value: wrap.replace("none", "nowrap"),
+            value: wrap,
             position: declaration.position,
             parent: declaration.parent,
           });
