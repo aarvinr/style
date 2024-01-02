@@ -1,0 +1,3 @@
+:root {
+  font: "Inter", system-ui, sans-serif;
+}
