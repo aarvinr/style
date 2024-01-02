@@ -1,4 +1,4 @@
-# Box
+# Flex
 
 The `flex` property can be used as an alias for `flex-direction`, `justify-content`, `align-items`, `flex-basis`, and `flex-wrap`, and also sets `display` to `flex`. The `align-items`, `flex-basis`, and `flex-wrap` are optional - if `align-items` is not provided, it will be set to the same value as `justify-content`.
 
