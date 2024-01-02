@@ -8,8 +8,11 @@
   "module": "src/compile.ts",
   "version": "0.1.0",
   "type": "module",
+  "scripts": {
+    "publish": "npm publish --access=public"
+  },
   "devDependencies": {
-    "@types/bun": "latest",
+    "@types/bun": "^1.0.0",
     "@types/css": "^0.0.37"
   },
   "peerDependencies": {

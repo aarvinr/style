@@ -7,12 +7,16 @@
   "homepage": "https://stylecss.js.org/",
   "module": "src/cli.ts",
   "version": "1.0.0",
+  "scripts": {
+    "prepublishOnly": "bun run ../../prePublish.ts",
+    "publish": "npm publish --access=public && bun run ../../postPublish.ts"
+  },
   "type": "module",
   "dependencies": {
     "@stylecss/compiler": "workspace:*"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "^1.0.0"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
