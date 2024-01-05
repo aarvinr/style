@@ -15,6 +15,7 @@ import { font } from "../src/parse/font";
 import { grid } from "../src/parse/grid";
 import { hyphen } from "../src/parse/hyphen";
 import { isolate } from "../src/parse/isolate";
+import { letter } from "../src/parse/letter";
 import { ratio } from "../src/parse/ratio";
 
 import { parse, stringify } from "css";
@@ -156,6 +157,16 @@ describe("Compiler", () => {
     );
     expect(stringify(isolate(parse(response)))).toBe(
       ":root {\n  isolation: isolate;\n}"
+    );
+  });
+
+  test("Letter", () => {
+    const response = readFileSync(
+      import.meta.dir + "/styles/letter.style",
+      "utf-8"
+    );
+    expect(stringify(letter(parse(response)))).toBe(
+      ":root {\n  letter-spacing: 0.3em;\n}"
     );
   });
 

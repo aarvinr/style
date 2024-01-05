@@ -13,6 +13,7 @@ import { font } from "./parse/font";
 import { grid } from "./parse/grid";
 import { hyphen } from "./parse/hyphen";
 import { isolate } from "./parse/isolate";
+import { letter } from "./parse/letter";
 import { ratio } from "./parse/ratio";
 
 export function compile(src: string): string {
@@ -31,6 +32,7 @@ export function compile(src: string): string {
   css = grid(css);
   css = hyphen(css);
   css = isolate(css);
+  css = letter(css);
   css = ratio(css);
 
   return stringify(css);
