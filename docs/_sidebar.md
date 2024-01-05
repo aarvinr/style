@@ -27,4 +27,5 @@
   - [font](properties/font.md)
   - [hyphen](properties/hyphen.md)
   - [isolate](properties/isolate.md)
+  - [letter](properties/letter.md)
   - [ratio](properties/ratio.md)
