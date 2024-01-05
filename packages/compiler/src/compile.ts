@@ -10,6 +10,7 @@ import { color_adjust } from "./parse/color-adjust";
 import { decorate } from "../src/parse/decorate";
 import { flex } from "./parse/flex";
 import { font } from "./parse/font";
+import { grid } from "./parse/grid";
 import { isolate } from "./parse/isolate";
 import { ratio } from "./parse/ratio";
 
@@ -26,6 +27,7 @@ export function compile(src: string): string {
   css = decorate(css);
   css = flex(css);
   css = font(css);
+  css = grid(css);
   css = isolate(css);
   css = ratio(css);
 

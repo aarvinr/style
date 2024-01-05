@@ -12,6 +12,7 @@ import { color_adjust } from "../src/parse/color-adjust";
 import { decorate } from "../src/parse/decorate";
 import { flex } from "../src/parse/flex";
 import { font } from "../src/parse/font";
+import { grid } from "../src/parse/grid";
 import { isolate } from "../src/parse/isolate";
 import { ratio } from "../src/parse/ratio";
 
@@ -124,6 +125,16 @@ describe("Compiler", () => {
     );
     expect(stringify(font(parse(response)))).toBe(
       `:root {\n  font-family: "Inter", system-ui, sans-serif;\n}`
+    );
+  });
+
+  test("Grid", () => {
+    const response = readFileSync(
+      import.meta.dir + "/styles/grid.style",
+      "utf-8"
+    );
+    expect(stringify(grid(parse(response)))).toBe(
+      ":root {\n  display: grid;\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n  grid-template-rows: repeat(1, minmax(0, 1fr));\n  justify-items: center;\n  align-content: center;\n  display: grid;\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n  grid-template-rows: repeat(4, minmax(0, 1fr));\n  justify-items: left;\n  align-content: first baseline;\n}"
     );
   });
 
