@@ -11,6 +11,7 @@ import { decorate } from "../src/parse/decorate";
 import { flex } from "./parse/flex";
 import { font } from "./parse/font";
 import { grid } from "./parse/grid";
+import { hyphen } from "./parse/hyphen";
 import { isolate } from "./parse/isolate";
 import { ratio } from "./parse/ratio";
 
@@ -28,6 +29,7 @@ export function compile(src: string): string {
   css = flex(css);
   css = font(css);
   css = grid(css);
+  css = hyphen(css);
   css = isolate(css);
   css = ratio(css);
 

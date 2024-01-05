@@ -13,6 +13,7 @@ import { decorate } from "../src/parse/decorate";
 import { flex } from "../src/parse/flex";
 import { font } from "../src/parse/font";
 import { grid } from "../src/parse/grid";
+import { hyphen } from "../src/parse/hyphen";
 import { isolate } from "../src/parse/isolate";
 import { ratio } from "../src/parse/ratio";
 
@@ -135,6 +136,16 @@ describe("Compiler", () => {
     );
     expect(stringify(grid(parse(response)))).toBe(
       ":root {\n  display: grid;\n  grid-template-columns: repeat(1, minmax(0, 1fr));\n  grid-template-rows: repeat(1, minmax(0, 1fr));\n  justify-items: center;\n  align-content: center;\n  display: grid;\n  grid-template-columns: repeat(3, minmax(0, 1fr));\n  grid-template-rows: repeat(4, minmax(0, 1fr));\n  justify-items: left;\n  align-content: first baseline;\n}"
+    );
+  });
+
+  test("Hyphen", () => {
+    const response = readFileSync(
+      import.meta.dir + "/styles/hyphen.style",
+      "utf-8"
+    );
+    expect(stringify(hyphen(parse(response)))).toBe(
+      ":root {\n  hyphens: manual;\n}"
     );
   });
 
