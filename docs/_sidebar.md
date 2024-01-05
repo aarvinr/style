@@ -25,5 +25,6 @@
   - [flex](properties/flex.md)
   - [grid](properties/grid.md)
   - [font](properties/font.md)
+  - [hyphen](properties/hyphen.md)
   - [isolate](properties/isolate.md)
   - [ratio](properties/ratio.md)
