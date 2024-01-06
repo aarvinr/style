@@ -16,6 +16,7 @@ import { isolate } from "./parse/isolate";
 import { letter } from "./parse/letter";
 import { line } from "./parse/line";
 import { list } from "./parse/list";
+import { mix_blend } from "./parse/mix-blend";
 import { ratio } from "./parse/ratio";
 
 export function compile(src: string): string {
@@ -36,6 +37,8 @@ export function compile(src: string): string {
   css = isolate(css);
   css = letter(css);
   css = line(css);
+  css = list(css);
+  css = mix_blend(css);
   css = ratio(css);
 
   return stringify(css);

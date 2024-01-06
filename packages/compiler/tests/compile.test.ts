@@ -18,6 +18,7 @@ import { isolate } from "../src/parse/isolate";
 import { letter } from "../src/parse/letter";
 import { line } from "../src/parse/line";
 import { list } from "../src/parse/list";
+import { mix_blend } from "../src/parse/mix-blend";
 import { ratio } from "../src/parse/ratio";
 
 import { parse, stringify } from "css";
@@ -189,6 +190,16 @@ describe("Compiler", () => {
     );
     expect(stringify(list(parse(response)))).toBe(
       `:root {\n  list-style: square;\n  list-style: url("/media/examples/rocket.svg");\n  list-style: georgian outside url("/non-existent.svg");\n}`
+    );
+  });
+
+  test("Mix-Blend", () => {
+    const response = readFileSync(
+      import.meta.dir + "/styles/mix-blend.style",
+      "utf-8"
+    );
+    expect(stringify(mix_blend(parse(response)))).toBe(
+      ":root {\n  mix-blend-mode: darken, luminosity;\n}"
     );
   });
 
