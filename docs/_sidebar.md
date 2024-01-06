@@ -30,4 +30,5 @@
   - [letter](properties/letter.md)
   - [line](properties/line.md)
   - [list](properties/list.md)
+  - [mix-blend](properties/mix-blend.md)
   - [ratio](properties/ratio.md)
