@@ -14,6 +14,7 @@ import { grid } from "./parse/grid";
 import { hyphen } from "./parse/hyphen";
 import { isolate } from "./parse/isolate";
 import { letter } from "./parse/letter";
+import { line } from "./parse/line";
 import { ratio } from "./parse/ratio";
 
 export function compile(src: string): string {
@@ -33,6 +34,7 @@ export function compile(src: string): string {
   css = hyphen(css);
   css = isolate(css);
   css = letter(css);
+  css = line(css);
   css = ratio(css);
 
   return stringify(css);

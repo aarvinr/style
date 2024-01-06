@@ -16,6 +16,7 @@ import { grid } from "../src/parse/grid";
 import { hyphen } from "../src/parse/hyphen";
 import { isolate } from "../src/parse/isolate";
 import { letter } from "../src/parse/letter";
+import { line } from "../src/parse/line";
 import { ratio } from "../src/parse/ratio";
 
 import { parse, stringify } from "css";
@@ -167,6 +168,16 @@ describe("Compiler", () => {
     );
     expect(stringify(letter(parse(response)))).toBe(
       ":root {\n  letter-spacing: 0.3em;\n}"
+    );
+  });
+
+  test("Line", () => {
+    const response = readFileSync(
+      import.meta.dir + "/styles/line.style",
+      "utf-8"
+    );
+    expect(stringify(line(parse(response)))).toBe(
+      ":root {\n  line-height: 3rem;\n  line-height: 2px;\n  overflow: hidden;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 4;\n}"
     );
   });
 
