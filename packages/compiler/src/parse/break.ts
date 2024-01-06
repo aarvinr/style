@@ -11,21 +11,19 @@ export function _break(src: Stylesheet): Stylesheet {
     rule.declarations
       ?.filter((declaration: Declaration) => declaration.property == "break")
       .forEach((declaration: Declaration) => {
-        if (declaration.value?.split(" ")[0]) {
-          rule.declarations?.push({
-            type: "declaration",
-            property: "break-before",
-            value: declaration.value?.split(" ")[0],
-            position: declaration.position,
-            parent: declaration.parent,
-          });
-        }
+        rule.declarations?.push({
+          type: "declaration",
+          property: "break-before",
+          value: declaration.value?.split(" ")[0],
+          position: declaration.position,
+          parent: declaration.parent,
+        });
 
         if (declaration.value?.split(" ")[1]) {
           rule.declarations?.push({
             type: "declaration",
             property: "break-after",
-            value: declaration.value?.split(" ")[1],
+            value: declaration.value.split(" ")[1],
             position: declaration.position,
             parent: declaration.parent,
           });
@@ -35,7 +33,7 @@ export function _break(src: Stylesheet): Stylesheet {
           rule.declarations?.push({
             type: "declaration",
             property: "break-inside",
-            value: declaration.value?.split(" ")[2],
+            value: declaration.value.split(" ")[2],
             position: declaration.position,
             parent: declaration.parent,
           });
