@@ -1,0 +1,5 @@
+:root {
+  list: square;
+  list: url("/media/examples/rocket.svg");
+  list: georgian outside url("/non-existent.svg");
+}

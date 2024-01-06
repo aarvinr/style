@@ -17,6 +17,7 @@ import { hyphen } from "../src/parse/hyphen";
 import { isolate } from "../src/parse/isolate";
 import { letter } from "../src/parse/letter";
 import { line } from "../src/parse/line";
+import { list } from "../src/parse/list";
 import { ratio } from "../src/parse/ratio";
 
 import { parse, stringify } from "css";
@@ -178,6 +179,16 @@ describe("Compiler", () => {
     );
     expect(stringify(line(parse(response)))).toBe(
       ":root {\n  line-height: 3rem;\n  line-height: 2px;\n  overflow: hidden;\n  display: -webkit-box;\n  -webkit-box-orient: vertical;\n  -webkit-line-clamp: 4;\n}"
+    );
+  });
+
+  test("List", () => {
+    const response = readFileSync(
+      import.meta.dir + "/styles/list.style",
+      "utf-8"
+    );
+    expect(stringify(list(parse(response)))).toBe(
+      `:root {\n  list-style: square;\n  list-style: url("/media/examples/rocket.svg");\n  list-style: georgian outside url("/non-existent.svg");\n}`
     );
   });
 

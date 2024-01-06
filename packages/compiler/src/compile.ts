@@ -15,6 +15,7 @@ import { hyphen } from "./parse/hyphen";
 import { isolate } from "./parse/isolate";
 import { letter } from "./parse/letter";
 import { line } from "./parse/line";
+import { list } from "./parse/list";
 import { ratio } from "./parse/ratio";
 
 export function compile(src: string): string {
