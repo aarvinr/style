@@ -29,4 +29,5 @@
   - [isolate](properties/isolate.md)
   - [letter](properties/letter.md)
   - [line](properties/line.md)
+  - [list](properties/list.md)
   - [ratio](properties/ratio.md)
