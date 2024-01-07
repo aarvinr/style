@@ -31,4 +31,5 @@
   - [line](properties/line.md)
   - [list](properties/list.md)
   - [mix-blend](properties/mix-blend.md)
+  - [object](properties/object.md)
   - [ratio](properties/ratio.md)
