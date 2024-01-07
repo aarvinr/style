@@ -1,0 +1,5 @@
+:root {
+  object: cover;
+  object: cover top;
+  object: contain 25% 75%;
+}

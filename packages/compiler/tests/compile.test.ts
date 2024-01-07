@@ -19,6 +19,7 @@ import { letter } from "../src/parse/letter";
 import { line } from "../src/parse/line";
 import { list } from "../src/parse/list";
 import { mix_blend } from "../src/parse/mix-blend";
+import { object } from "../src/parse/object";
 import { ratio } from "../src/parse/ratio";
 
 import { parse, stringify } from "css";
@@ -200,6 +201,16 @@ describe("Compiler", () => {
     );
     expect(stringify(mix_blend(parse(response)))).toBe(
       ":root {\n  mix-blend-mode: darken, luminosity;\n}"
+    );
+  });
+
+  test("Object", () => {
+    const response = readFileSync(
+      import.meta.dir + "/styles/object.style",
+      "utf-8"
+    );
+    expect(stringify(object(parse(response)))).toBe(
+      ":root {\n  object-fit: cover;\n  object-fit: cover;\n  object-position: top;\n  object-fit: contain;\n  object-position: 25% 75%;\n}"
     );
   });
 
