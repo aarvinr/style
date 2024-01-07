@@ -6,7 +6,7 @@
   },
   "homepage": "https://stylecss.js.org/",
   "module": "src/compile.ts",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "scripts": {
     "publish": "npm publish --access=public"
@@ -23,7 +23,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/aarvinr/style.git",
+    "url": "git+https://github.com/aarvinr/style.git",
     "directory": "packages/compiler"
   },
   "license": "MIT"
