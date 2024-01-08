@@ -20,6 +20,7 @@ import { line } from "../src/parse/line";
 import { list } from "../src/parse/list";
 import { mix_blend } from "../src/parse/mix-blend";
 import { object } from "../src/parse/object";
+import { overscroll } from "../src/parse/overscroll";
 import { ratio } from "../src/parse/ratio";
 
 import { parse, stringify } from "css";
@@ -211,6 +212,16 @@ describe("Compiler", () => {
     );
     expect(stringify(object(parse(response)))).toBe(
       ":root {\n  object-fit: cover;\n  object-fit: cover;\n  object-position: top;\n  object-fit: contain;\n  object-position: 25% 75%;\n}"
+    );
+  });
+
+  test("Overscroll", () => {
+    const response = readFileSync(
+      import.meta.dir + "/styles/overscroll.style",
+      "utf-8"
+    );
+    expect(stringify(overscroll(parse(response)))).toBe(
+      ":root {\n  overscroll-behavior: auto contain;\n}"
     );
   });
 

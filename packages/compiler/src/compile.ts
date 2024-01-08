@@ -18,6 +18,7 @@ import { line } from "./parse/line";
 import { list } from "./parse/list";
 import { mix_blend } from "./parse/mix-blend";
 import { object } from "../src/parse/object";
+import { overscroll } from "./parse/overscroll";
 import { ratio } from "./parse/ratio";
 
 export function compile(src: string): string {
@@ -41,6 +42,7 @@ export function compile(src: string): string {
   css = list(css);
   css = mix_blend(css);
   css = object(css);
+  css = overscroll(css);
   css = ratio(css);
 
   return stringify(css);
