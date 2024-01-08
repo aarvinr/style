@@ -33,4 +33,5 @@
   - [mix-blend](properties/mix-blend.md)
   - [object](properties/object.md)
   - [overscroll](properties/overscroll.md)
+  - [visible](properties/visible.md)
   - [ratio](properties/ratio.md)
