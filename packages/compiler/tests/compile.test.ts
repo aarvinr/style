@@ -21,6 +21,7 @@ import { list } from "../src/parse/list";
 import { mix_blend } from "../src/parse/mix-blend";
 import { object } from "../src/parse/object";
 import { overscroll } from "../src/parse/overscroll";
+import { visible } from "../src/parse/visible";
 import { ratio } from "../src/parse/ratio";
 
 import { parse, stringify } from "css";
@@ -222,6 +223,16 @@ describe("Compiler", () => {
     );
     expect(stringify(overscroll(parse(response)))).toBe(
       ":root {\n  overscroll-behavior: auto contain;\n}"
+    );
+  });
+
+  test("Visible", () => {
+    const response = readFileSync(
+      import.meta.dir + "/styles/visible.style",
+      "utf-8"
+    );
+    expect(stringify(visible(parse(response)))).toBe(
+      ":root {\n  visibility: hidden;\n}"
     );
   });
 
